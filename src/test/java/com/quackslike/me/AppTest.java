@@ -1,38 +1,26 @@
 package com.quackslike.me;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import org.junit.Test;
 
-/**
- * Unit test for simple App.
- */
-public class AppTest 
-    extends TestCase
-{
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public AppTest( String testName )
-    {
-        super( testName );
+import static org.junit.Assert.*;
+
+public class AppTest {
+    App app = new App("Noah");
+
+    @Test
+    public void square_zero() {
+        int sqaureValue = app.square(0);
+        assertEquals(0, sqaureValue);
     }
 
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( AppTest.class );
+    @Test
+    public void sum_1_2(){
+        int sum = app.sum(1, 2);
+        assertEquals(3, sum);
     }
 
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
-    }
+//    @Test
+//    public void square_1() {
+//        assertEquals(1, app.square(1));
+//    }
 }
