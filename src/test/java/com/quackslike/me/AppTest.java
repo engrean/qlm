@@ -8,9 +8,15 @@ public class AppTest {
     App app = new App("Noah");
 
     @Test
-    public void square_zero() {
-        int sqaureValue = app.square(0);
-        assertEquals(0, sqaureValue);
+    public void square_4() {
+        int sqaureValue = app.square(4);
+        assertEquals(16, sqaureValue);
+    }
+
+    @Test
+    public void sum_2_2(){
+        int sum = app.sum(2, 2);
+        assertEquals(4, sum);
     }
 
     @Test
