@@ -15,19 +15,19 @@ public class DaysOldTest {
     @Test
     public void DaysOld_17() {
         int yourage = ageCalc.calculateAge(5, 11, 1997);
-        assertEquals(17,yourage);
+        assertEquals(18,yourage);
     }
 
     @Test
     public void DaysOld_21() {
         int yourage = ageCalc.calculateAge(5, 11, 1993);
-        assertEquals(21,yourage);
+        assertEquals(22,yourage);
     }
 
     @Test
     public void DaysOld_52() {
         int yourage = ageCalc.calculateAge(5, 11, 1958);
-        assertEquals(56,yourage);
+        assertEquals(57,yourage);
     }
 
     @Test
