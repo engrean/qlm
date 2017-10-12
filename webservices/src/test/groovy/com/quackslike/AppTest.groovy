@@ -10,10 +10,9 @@ class AppTest extends Specification {
   def 'setAppName works'() {
     when:
     app.appName = 'joe'
-    def appName = app.appName
 
     then:
-    appName == 'joe'
+    app.appName == 'joe'
   }
 
 }
