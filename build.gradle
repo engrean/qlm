@@ -1,5 +1,9 @@
 defaultTasks 'test', 'war'
 
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
 subprojects {
     apply plugin: 'groovy'
     group = 'com.quackslike'
@@ -20,3 +24,4 @@ subprojects {
         )
     }
 }
+
